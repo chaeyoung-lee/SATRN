@@ -4,3 +4,4 @@ pyyaml
 fire
 psutil
 yapf
+Pillow
