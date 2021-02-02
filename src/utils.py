@@ -226,7 +226,7 @@ def count_available_gpus():
     from tensorflow.python.client import device_lib
     local_device_protos = device_lib.list_local_devices()
     gpu_cnt = len(
-        [x.name for x in local_device_protos if x.device_type == 'GPU'])
+        [x.name for x in local_device_protos if 'GPU' in x.device_type])
 
     return gpu_cnt
 
